@@ -6,29 +6,17 @@ let id = process.argv[3];
 if (id == undefined) id = "";
 
 if (option === "personajes" && id == ""){
-    getCharacters ()
-        .then(function(response){
-        console.log(response.data)
-        })
+    getCharacters ();
 }
 
 if (option === "personajes" && id != ""){
-    getCharactersId (id)
-        .then(function(response){
-        console.log(response.data.name) 
-        })
+    getCharactersId (id);
 }
 
 if (option === "episodios" && id == ""){
-    getEpisodes ()
-        .then(function(response){
-        console.log(response.data)
-        })
+    getEpisodes ();
 }
 
 if (option === "episodios" && id != ""){
-    getEpisodeId (id)
-        .then(function(response){
-        console.log(response.data.name) 
-        })
+    getEpisodeId (id);
 }
