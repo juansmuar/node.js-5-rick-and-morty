@@ -1,0 +1,23 @@
+{
+  "name": "node.js-5-rick-and-morty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juansmuar/node.js-5-rick-and-morty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juansmuar/node.js-5-rick-and-morty/issues"
+  },
+  "homepage": "https://github.com/juansmuar/node.js-5-rick-and-morty#readme",
+  "dependencies": {
+    "axios": "^1.1.3"
+  }
+}
