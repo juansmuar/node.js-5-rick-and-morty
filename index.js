@@ -1,9 +1,20 @@
-const {getCharacters} = require ('./services')
+const {getCharacters, getCharactersId} = require ('./services')
 
-const option = process.argv[2];
-const id = process.argv[3];
+let option = process.argv[2];
+let id = process.argv[3];
 
-getCharacters ()
-    .then(function(response){
+if (id == undefined) id = "";
+
+if (option === "personajes" && id == ""){
+    getCharacters ()
+        .then(function(response){
         console.log(response.data)
-    })
+        })
+}
+
+if (option === "personajes" && id != ""){
+    getCharactersId (id)
+        .then(function(response){
+        console.log(response.data.name) 
+        })
+}
