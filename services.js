@@ -11,7 +11,17 @@ function getCharactersId (id){
     return axios.get(characters + "/" + id)
 }
 
+function getEpisodes (){
+    return axios.get(episodes)
+}
+
+function getEpisodeId (id){
+    return axios.get(episodes + "/" + id)
+}
+
 module.exports={
     getCharacters,
-    getCharactersId
+    getCharactersId,
+    getEpisodes,
+    getEpisodeId
 }
